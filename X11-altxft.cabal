@@ -1,0 +1,16 @@
+name:           X11-altxft
+version:        0.1
+license:        LGPL
+license-file:   LICENSE
+author:         Troels Henriksen
+maintainer:     athas@sigkill.dk
+category:       Graphics
+synopsis:       Robust bindings to Xft, the X Free Type interface library.
+description:    Robust bindings to Xft, the X Free Type interface library.
+exposed-modules:    Graphics.X11.Xft
+extensions:         ForeignFunctionInterface
+build-depends:	    base < 5, X11>=1.2.1, utf8-string>=0.1, containers
+ghc-options:        -funbox-strict-fields -Wall
+pkgconfig-depends:  xft
+extra-source-files: Hello.hs
+build-type:         Simple
