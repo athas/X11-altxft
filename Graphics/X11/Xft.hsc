@@ -8,7 +8,7 @@
 -- Interface to the Xft library based on the @X11-xft@ binding by
 -- Clemens Fruhwirth.  This library builds upon the X11 binding to
 -- Xlib ("Graphics.X11") and cannot be used with any other.  A tiny
--- part of Xrender is also exposed, as no Haskell interface existed as
+-- part of Xrender is also exposed, as no Haskell interface exists as
 -- of this writing.
 --
 -- The spirit of this binding is to hide away the fact that the
@@ -22,7 +22,7 @@
 -- Another priority has been robustness.  Many naively written FFI
 -- bindings to not properly check the return values of the C functions
 -- they call.  In particular, null pointers are often assumed to never
--- exist, and oftentimes impossible to check by the user, as the
+-- exist, and oftentimes impossible to check by the user as the
 -- underlying pointer is not visible across the module boundary.  In
 -- this binding, any Xft function that can return null has been
 -- translated into a Haskell function that returns a 'Maybe' value.
