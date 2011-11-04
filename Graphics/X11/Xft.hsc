@@ -204,7 +204,6 @@ foreign import ccall "XftColorAllocValue"
 foreign import ccall "XftColorFree"
   xftColorFree :: X11.Display -> X11.Visual -> X11.Colormap -> Color -> IO ()
 
-
 -- | The core X11 colour contained in an Xft colour.
 pixel :: Color -> X11.Pixel
 pixel (Color ptr) = fi $ unsafePerformIO $
